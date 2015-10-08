@@ -1,0 +1,47 @@
+﻿<table class=" table table-bordered">
+    <thead>
+        <tr>
+            <th>Status</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tr ng-repeat="order in Orders">
+        <td>{{order.Status}}</td>
+        <td>{{order.Name}}</td>
+        <td>
+            <select ng-change="ChangeStatus(order)" ng-model="order.Status">
+                <option value="NEW">NEW</option>
+                <option value="PROCESSING">PROCESSING</option>
+                <option value="DECLINED">DECLINED</option>
+                <option value="DELIVERED">DELIVERED</option>
+            </select>
+        </td>
+    </tr>
+</table>
+<br />
+<!--<h2>Add order here from testing</h2>
+<form method="post" ng-submit="AddOrder()">
+    <table class=" table table-bordered">
+        <tr>
+            <td>Name</td>
+            <td>
+                <input type="text" class="form-control" required ng-model="order.Name" /></td>
+        </tr>
+        <tr>
+            <td>Status</td>
+            <td>
+                <select class="form-control" required ng-change="ChangeStatus(order)" ng-model="order.Status">
+                    <option value="NEW">NEW</option>
+                    <option value="PROCESSING">PROCESSING</option>
+                    <option value="DECLINED">DECLINED</option>
+                    <option value="DELIVERED">DELIVERED</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit" class="btn btn-success">Add Order</button>
+            </td>
+        </tr>
+    </table>
+</form>-->

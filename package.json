@@ -1,0 +1,20 @@
+{
+  "name": "order-app",
+  "private": true,
+  "devDependencies": {
+    "body-parser": "^1.13.2",
+    "express": "^4.13.1",        
+    "mongoose": "^4.1.8"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "start": "node web.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "express": "^4.13.1",        
+    "mongoose": "^4.1.8"
+  }
+}
